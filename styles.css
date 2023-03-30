@@ -90,3 +90,85 @@ body {
   .cta-btn:hover {
     background-color: #B71C1C;
   }
+
+ /* Add these styles to your existing styles.css file */
+
+.members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .member {
+    flex: 1;
+    max-width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .member h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .member p {
+    margin-bottom: 5px;
+  }
+  
+  .member a {
+    color: #0077B5;
+    text-decoration: none;
+  }
+  
+  .member a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Add these styles to your existing styles.css file */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  form label {
+    margin-top: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+  }
+  
+  form input[type="submit"] {
+    width: auto;
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #2E3A42;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #4C5D68;
+  }
+  
