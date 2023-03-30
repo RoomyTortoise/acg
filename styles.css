@@ -1,68 +1,92 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
     color: #333;
-    line-height: 1.6;
-}
-
-.header {
-    background-color: #006400;
+  }
+  
+  header {
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-}
-
-.logo {
-    font-size: 32px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  nav {
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
     color: #fff;
-}
-
-.main {
-    padding: 40px;
-    text-align: center;
-}
-
-.headline {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.description {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.cta-button {
-    display: inline-block;
-    background-color: #006400;
-    color: #fff;
-    padding: 12px 20px;
-    font-size: 18px;
-    border-radius: 5px;
     text-decoration: none;
-}
-
-.cta-button:hover {
-    background-color: #004d00;
-}
-
-.footer {
+  }
+  
+  nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  footer {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
-    font-size: 14px;
-}
-
-.logo-image {
-    width: 150px;
-    height: auto;
+  }
+  
+  /* Colors for the theme */
+  .red {
+    color: #C62828;
+  }
+  
+  .green {
+    color: #2E7D32;
+  }
+  
+  .white {
+    color: #FFF;
+  }
+  
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  
+  .service {
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .cta-btn {
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px;
-}
+    background-color: #C62828;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .cta-btn:hover {
+    background-color: #B71C1C;
+  }
