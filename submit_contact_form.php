@@ -1,25 +1,39 @@
-f ($_SERVER["REQUEST_METHOD"] == "POST") {
+<?php
+// Database credentials
+define('DB_HOST', 'localhost');
+define('DB_USERNAME', 'your_database_username');
+define('DB_PASSWORD', 'your_database_password');
+define('DB_NAME', 'contact_form_db');
+
+// Connect to the database
+$conn = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME);
+
+// Check the connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+// Check if the form was submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Get the form data
   $name = $_POST["name"];
   $email = $_POST["email"];
   $message = $_POST["message"];
 
-  // Prepare the email
-  $to = "your-email@example.com"; // Replace with your email address
-  $subject = "Contact Form Submission from Aztec Consulting Group";
-  $headers = "From: $email" . "\r\n" .
-             "Reply-To: $email" . "\r\n" .
-             "X-Mailer: PHP/" . phpversion();
-  $body = "Name: $name\n" .
-          "Email: $email\n\n" .
-          "Message:\n$message";
+  // Prepare the SQL statement
+  $stmt = $conn->prepare("INSERT INTO contact_form_entries (name, email, message) VALUES (?, ?, ?)");
+  $stmt->bind_param("sss", $name, $email, $message);
 
-  // Send the email
-  if (mail($to, $subject, $body, $headers)) {
-    echo "Your message was sent successfully. Thank you!";
+  // Execute the statement and check the result
+  if ($stmt->execute()) {
+    echo "Your message was saved successfully. Thank you!";
   } else {
-    echo "There was an error sending your message. Please try again.";
+    echo "There was an error saving your message. Please try again.";
   }
+
+  // Close the statement and the connection
+  $stmt->close();
+  $conn->close();
 } else {
   // Redirect to the contact page if the form was not submitted
   header("Location: contact.html");
