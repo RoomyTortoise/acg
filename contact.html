@@ -31,17 +31,17 @@
         Email: A01026268@tec.mx <br>
         Phone: (+52) 5572338916
       </p>
-      <form action="submit_contact_form.php" method="post">
+      <form id="contact-form">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br>
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea><br>
+        <textarea id="message" name="message" required></textarea>
 
-        <input type="submit" value="Submit">
+        <button type="submit">Send</button>
 
       </form>
       <script>
