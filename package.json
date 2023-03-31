@@ -9,6 +9,6 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
-    "faunadb": "^4.6.0"
+    "faunadb": "^4.8.0"
   }
 }
