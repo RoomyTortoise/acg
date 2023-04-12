@@ -48,6 +48,17 @@ header img {
   nav ul li a:hover {
     color: #ccc;
   }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .language-switcher {
+    font-size: 1rem;
+    margin-right: 1rem;
+  }
+  
   
   main {
     padding: 20px;

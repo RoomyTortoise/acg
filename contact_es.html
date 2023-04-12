@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aztec Consulting Group - Contact</title>
+  <title>Aztec Consulting Group - Contacto</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <img src="assets/LogoACG.png" alt="Aztec Consulting Group Logo" class="logo-image">
+    <img src="assets/LogoACG.png" alt="Logo de Aztec Consulting Group" class="logo-image">
     <h1>Aztec Consulting Group</h1>
   </header>
-  
+
   <nav>
     <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="about.html">Acerca de Nosotros</a></li>
-      <li><a href="members.html">Miembros</a></li>
-      <li><a href="contact.html">Contacto</a></li>
+      <li><a href="index_es.html">Inicio</a></li>
+      <li><a href="about_es.html">Acerca de Nosotros</a></li>
+      <li><a href="members_es.html">Miembros</a></li>
+      <li><a href="contact_es.html">Contacto</a></li>
     </ul>
     <div class="language-switcher">
       <a href="index.html">English</a>
@@ -28,25 +28,25 @@
 
   <main>
     <section>
-      <h2>Contact Us</h2>
+      <h2>Contáctanos</h2>
       <p>
-        If you have any questions or would like to discuss how Aztec Consulting Group can help your business, please get in touch using the form below or contact us directly at:
+        Si tienes alguna pregunta o te gustaría discutir cómo Aztec Consulting Group puede ayudar a tu negocio, por favor ponte en contacto con nosotros utilizando el siguiente formulario o contáctanos directamente a:
       </p>
       <p>
-        Email: A01026268@tec.mx <br>
-        Phone: (+52) 5572338916
+        Correo electrónico: A01026268@tec.mx <br>
+        Teléfono: (+52) 5572338916
       </p>
       <form id="contact-form">
-        <label for="name">Name:</label>
+        <label for="name">Nombre:</label>
         <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
+        <label for="email">Correo electrónico:</label>
         <input type="email" id="email" name="email" required>
 
-        <label for="message">Message:</label>
+        <label for="message">Mensaje:</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Send</button>
+        <button type="submit">Enviar</button>
 
       </form>
       <script>
@@ -64,13 +64,13 @@
             });
 
             if (response.ok) {
-              alert('Your message was saved successfully. Thank you!');
+              alert('Tu mensaje ha sido guardado exitosamente. ¡Gracias!');
             } else {
-              alert('There was an error saving your message. Please try again.');
+              alert('Hubo un error al guardar tu mensaje. Por favor intenta de nuevo.');
             }
           } catch (error) {
-            console.error('Error submitting form:', error);
-            alert('There was an error submitting the form. Please try again.');
+            console.error('Error al enviar el formulario:', error);
+            alert('Hubo un error al enviar el formulario. Por favor intenta de nuevo.');
           }
         });
       </script>
@@ -78,7 +78,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 Aztec Consulting Group. All rights reserved.</p>
+    <p>&copy; 2023 Aztec Consulting Group. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
