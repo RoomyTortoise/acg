@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aztec Consulting Group - Our Clients</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <img
+        src="assets/LogoACG.png"
+        alt="Aztec Consulting Group Logo"
+        class="logo-image"
+      />
+      <h1>Aztec Consulting Group</h1>
+    </header>
+
+    <nav></nav>
+    <script src="nav_en.js"></script>
+    
+
+    <main>
+      <section>
+        <h2>Our Clients</h2>
+        <div class="client">
+          <img
+            src="assets/softnet-logo.png"
+            alt="Softnet Logo"
+            class="client-logo"
+          />
+          <div class="client-info">
+            <h3>Softnet</h3>
+            <p>
+              Softnet is a leading provider of IT solutions for businesses of
+              all sizes. They specialize in software development, network
+              infrastructure, and cloud services.
+            </p>
+            <p>
+              We worked with Softnet to implement a new ERP system called
+              Ardimia. This system has improved their business processes and
+              streamlined their operations, resulting in significant cost
+              savings and increased efficiency.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Aztec Consulting Group. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // animation duration in ms
+        easing: "ease", // animation easing
+        offset: 120, // offset (in px) from the original trigger point
+        delay: function (index) {
+          return index * 200; // delay between each element animation (in ms)
+        },
+      });
+    </script>
+  </body>
+</html>
