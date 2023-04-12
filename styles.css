@@ -1,194 +1,240 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
 header img {
-    max-width: 150px; /* Adjust this value according to your preferred width */
-    height: auto; /* This maintains the aspect ratio of the image */
-  }
-  header {
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-  }
-  .logo-image {
-    max-width: 150px; /* Adjust this value according to your preferred width */
-    height: auto; /* This maintains the aspect ratio of the image */
-    margin-right: 15px; /* Add some space between the logo and the name */
-  }
-  h1 {
-    color: #333;
-  }
-  
-  nav {
-    background-color: #981717;
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    color: #ccc;
-  }
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .language-switcher {
-    font-size: 1rem;
-    margin-right: 1rem;
-  }
-  
-  
-  main {
-    padding: 20px;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Colors for the theme */
-  .red {
-    color: #C62828;
-  }
-  
-  .green {
-    color: #2E7D32;
-  }
-  
-  .white {
-    color: #FFF;
-  }
-  
-.services {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px 0;
-  }
-  
-  .service {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-  }
-  
-  .cta-btn {
-    display: inline-block;
-    background-color: #C62828;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .cta-btn:hover {
-    background-color: #B71C1C;
-  }
+  max-width: 150px; /* Adjust this value according to your preferred width */
+  height: auto; /* This maintains the aspect ratio of the image */
+}
+header {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+}
+.logo-image {
+  max-width: 150px; /* Adjust this value according to your preferred width */
+  height: auto; /* This maintains the aspect ratio of the image */
+  margin-right: 15px; /* Add some space between the logo and the name */
+}
+h1 {
+  color: #333;
+}
 
- /* Add these styles to your existing styles.css file */
+nav {
+  background-color: #981717;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.language-switcher {
+  font-size: 1rem;
+  margin-right: 1rem;
+}
+
+
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Colors for the theme */
+.red {
+  color: #C62828;
+}
+
+.green {
+  color: #2E7D32;
+}
+
+.white {
+  color: #FFF;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.service {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background-color: #C62828;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: #B71C1C;
+}
+
+/* Add these styles to your existing styles.css file */
 
 .members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 20px 0;
-  }
-  
-  .member {
-    flex: 1;
-    max-width: 200px;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .member img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-  }
-  
-  .member h3 {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  }
-  
-  .member p {
-    margin-bottom: 5px;
-  }
-  
-  .member a {
-    color: #0077B5;
-    text-decoration: none;
-  }
-  
-  .member a:hover {
-    text-decoration: underline;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.member {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
 
 
-  /* Add these styles to your existing styles.css file */
+
+
+/*/* Add this to the end of your styles.css file */
+
+.linkedin-icon {
+display: inline-block;
+width: 24px;
+height: 24px;
+margin-top: 8px;
+color: #0077b5;
+font-size: 24px;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.linkedin-icon:hover {
+color: #0e76a8;
+}
+
+.member {
+text-align: center;
+}
+
+.member img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 16px;
+}
+
+.members {
+display: flex;
+flex-wrap: wrap;
+gap: 32px;
+justify-content: center;
+}
+
+/*/ */
+
+.member img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.member h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.member p {
+  margin-bottom: 5px;
+}
+
+.member a {
+  color: #0077B5;
+  text-decoration: none;
+}
+
+.member a:hover {
+  text-decoration: underline;
+}
+
+/* Add these styles to your existing styles.css file */
 
 form {
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  form label {
-    margin-top: 10px;
-  }
-  
-  form input[type="text"],
-  form input[type="email"],
-  form textarea {
-    width: 100%;
-    padding: 5px;
-    margin-top: 5px;
-  }
-  
-  form input[type="submit"] {
-    width: auto;
-    margin-top: 15px;
-    padding: 8px 15px;
-    background-color: #2E3A42;
-    color: #FFFFFF;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  form input[type="submit"]:hover {
-    background-color: #4C5D68;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+form input[type="submit"] {
+  width: auto;
+  margin-top: 15px;
+  padding: 8px 15px;
+  background-color: #2E3A42;
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background-color: #4C5D68;
+}
+
+
+.team-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
