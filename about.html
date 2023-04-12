@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aztec Consulting Group - About Us</title>
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
   <header>
@@ -25,15 +28,16 @@
       <a href="index_es.html">Español</a>
     </div>
   </nav>
+
   <main>
-    <section>
+    <section data-aos="fade-up">
       <h2>About Aztec Consulting Group</h2>
       <p>
         Founded in 2023, Aztec Consulting Group is a professional consulting firm dedicated to helping businesses grow and succeed. We specialize in business strategy, technology implementation, and operational excellence. Our team of skilled consultants combines industry expertise and innovative thinking to deliver tailor-made solutions that meet the unique needs of our clients.
       </p>
     </section>
 
-    <section>
+    <section data-aos="fade-up">
       <h2>Our Values</h2>
       <ul>
         <li><strong>Integrity:</strong> We build trust by maintaining the highest ethical standards and always acting in the best interests of our clients.</li>
@@ -44,7 +48,7 @@
       </ul>
     </section>
 
-    <section>
+    <section data-aos="fade-up">
       <h2>Our Team</h2>
       <p>
         Aztec Consulting Group is made up of a diverse group of professionals with extensive experience in various industries. Our team members are passionate about helping clients achieve their goals and are dedicated to providing the highest level of service.
@@ -55,5 +59,14 @@
   <footer>
     <p>&copy; 2023 Aztec Consulting Group. All rights reserved.</p>
   </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease',
+      offset: 120,
+      once: true
+    });
+  </script>
 </body>
 </html>

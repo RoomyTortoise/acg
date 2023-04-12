@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aztec Consulting Group - Home</title>
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
   <header>
@@ -26,14 +29,14 @@
     </div>
   </nav>
   <main>
-    <section>
+    <section data-aos="fade-up" data-aos-delay="0">
       <h2>Welcome to Aztec Consulting Group</h2>
       <p>
         Aztec Consulting Group is a professional consulting firm specializing in business strategy, technology implementation, and operational excellence. Our mission is to help businesses unlock their full potential by providing innovative solutions and guidance. With our team of experienced consultants, we're committed to delivering exceptional value to our clients.
       </p>
     </section>
   
-    <section>
+    <section data-aos="fade-up" data-aos-delay="200">
       <h2>Our Services</h2>
       <div class="services">
         <div class="service">
@@ -51,7 +54,7 @@
       </div>
     </section>
   
-    <section>
+    <section data-aos="fade-up" data-aos-delay="250">
       <h2>Ready to transform your business?</h2>
       <p>Contact us today to schedule a consultation and discover how Aztec Consulting Group can help you achieve your goals.</p>
       <a href="contact.html" class="cta-btn">Contact Us</a>
@@ -61,5 +64,14 @@
   <footer>
     <p>&copy; 2023 Aztec Consulting Group. All rights reserved.</p>
   </footer>
+
+  <script>
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      easing: 'ease', // animation easing
+      offset: 120,
+      once: true
+    })
+  </script>
 </body>
 </html>

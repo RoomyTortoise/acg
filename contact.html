@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aztec Consulting Group - Contact</title>
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  
 </head>
 <body>
   <header>
@@ -27,7 +31,7 @@
   </nav>
 
   <main>
-    <section>
+    <section data-aos="fade-up">
       <h2>Contact Us</h2>
       <p>
         If you have any questions or would like to discuss how Aztec Consulting Group can help your business, please get in touch using the form below or contact us directly at:
@@ -72,6 +76,12 @@
             console.error('Error submitting form:', error);
             alert('There was an error submitting the form. Please try again.');
           }
+        });
+        AOS.init({
+          duration: 1000, // animation duration in ms
+          easing: 'ease', // animation easing
+          offset: 120, // offset (in px) from the original trigger point
+          once: true // whether animation should happen only once
         });
       </script>
     </section>
