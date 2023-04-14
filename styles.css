@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 header img {
-  max-width: 150px; /* Adjust this value according to your preferred width */
+  max-width: 100px; /* Adjust this value according to your preferred width */
   height: auto; /* This maintains the aspect ratio of the image */
 }
 header {
@@ -16,7 +16,7 @@ header {
   padding: 20px;
 }
 .logo-image {
-  max-width: 150px; /* Adjust this value according to your preferred width */
+  max-width: 80px; /* Adjust this value according to your preferred width */
   height: auto; /* This maintains the aspect ratio of the image */
   margin-right: 15px; /* Add some space between the logo and the name */
 }
@@ -155,13 +155,6 @@ color: #0e76a8;
 text-align: center;
 }
 
-.member img {
-width: 150px;
-height: 150px;
-object-fit: cover;
-border-radius: 50%;
-margin-bottom: 16px;
-}
 
 .members {
 display: flex;
@@ -173,7 +166,7 @@ justify-content: center;
 /*/ */
 
 .member img {
-  width: 100%;
+  width: 150px;
   height: auto;
   border-radius: 5px;
   object-fit: cover;
